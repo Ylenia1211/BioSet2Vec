@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bioset2vec
+Version: 0.1.0
+Summary: BioSet2Vec: extraction of k-mer dictionaries from multiple sets of biological sequences in the distributed
+Author: Ylenia Galluzzo
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<3.9
+
+UNKNOWN
+
