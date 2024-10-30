@@ -17,6 +17,9 @@
 - https://github.com/Ylenia1211/Bioft.git
 - Additional dependencies listed in `requirements.txt`
 
+
+Operating system(s): Platform independent
+
 ## Installation
 
 1. Clone the repository:
