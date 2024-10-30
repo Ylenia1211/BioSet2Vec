@@ -1,0 +1,10 @@
+{    
+    "path_jar": "./bioset2vec/bioft.jar",
+    "folder_path": "./data_example/set_synthetic/",
+    "k_min": 3,
+    "k_max": 4,
+    "n": 0,
+    "n_core":6,
+    "ram": 6,
+    "offHeap_size": 2
+}

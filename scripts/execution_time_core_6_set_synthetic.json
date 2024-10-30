@@ -2,7 +2,7 @@
     "execution_time_minutes": 1.5093579014142355,
     "n_core": 6,
     "input_file": [
-        "./set_synthetic/"
+        "./data_example/set_synthetic/"
     ],
     "ram": "6"
 }
