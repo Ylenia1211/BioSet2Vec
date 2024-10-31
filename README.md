@@ -80,15 +80,22 @@ Configure BioSet2Vec by creating an input.json file with the following parameter
 ```
 
 ### Parameter Details
-```bash
-path_jar: Path to the bioft.jar file.
-folder_path: Path to the folder containing sequence sets.
-k_min and k_max: Minimum and maximum k-mer lengths.
-n: number of time to perform test Montecarlo (if you want to use the package only to perform an easy TFIDF on your input sets set n to 0.
-n_core: Number of CPU cores to use.
-ram: RAM in GB for Spark.
-offHeap_size: Off-heap memory size in GB.
-```
+
+**path_jar**: Path to the bioft.jar file.
+
+**folder_path**: Path to the folder containing sequence sets.
+
+**k_min** and **k_max**: Minimum and maximum k-mer lengths.
+
+**n**: number of time to perform test Montecarlo (if you want to use the package only to perform an easy TFIDF on your input sets set  "n": 0).
+
+**n_core**: Number of CPU cores to use.
+
+**ram**: RAM in GB for Spark.
+
+**offHeap_size**: Off-heap memory size in GB.
+
+
 ### Usage
 
 
