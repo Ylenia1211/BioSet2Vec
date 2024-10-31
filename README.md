@@ -2,6 +2,9 @@
 
 **BioSet2Vec** is a tool designed to extract k-mer dictionaries from multiple sets of biological sequences using distributed computing. This method is efficient for large-scale biological sequence analysis, enabling users to handle diverse sequence sets, such as DNA sequences, and extract k-mer representations in a distributed fashion. The extracted k-mer dictionaries can be used for downstream tasks like sequence comparison, feature extraction, and machine learning.
 
+![General Overview](doc/system.png)
+
+
 ## Features
 
 - **Distributed k-mer extraction**: Handles multiple biological sequence sets.
