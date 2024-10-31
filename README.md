@@ -9,6 +9,7 @@
 - **Flexible k-mer size**: Adjustable k-mer lengths to suit the user’s specific needs.
 - **Support for various biological sequences**: Compatible with DNA sequences.
 - **Efficient I/O handling**: Works with large files in FASTA, FASTQ, or other common biological sequence formats.
+- **Easy setup with JSON configuration**: Use an `input.json` file to manage configuration parameters.
 
 ## Requirements
 
@@ -56,7 +57,54 @@ Press CTRL+X to exit the editor Press Y to save your changes and check:
     ```bash
      pip install bioset2vec/dist/bioset2vec-0.1.0-py3-none-any.whl --force-reinstall
     ```
+6. Place `bioft.jar` in the working directory:
+
+   `bioft.jar` is required for your job, download and place it in your project directory.
+
+   ```bash
+   cp /path/to/bioft.jar ./bioset2vec/bioft.jar
+   ```
+### Configuration 
+Configure BioSet2Vec by creating an input.json file with the following parameters:
+```json
+    {
+        "path_jar": "./bioset2vec/bioft.jar",
+        "folder_path": "./set_synthetic/",
+        "k_min": 3,
+        "k_max": 4,
+        "n": 0, 
+        "n_core": 6,
+        "ram": 6,
+        "offHeap_size": 2
+    }
+```
+
+### Parameter Details
+```bash
+path_jar: Path to the bioft.jar file.
+folder_path: Path to the folder containing sequence sets.
+k_min and k_max: Minimum and maximum k-mer lengths.
+n: number of time to perform test Montecarlo (if you want to use the package only to perform an easy TFIDF on your input sets set n to 0.
+n_core: Number of CPU cores to use.
+ram: RAM in GB for Spark.
+offHeap_size: Off-heap memory size in GB.
+```
+### Usage
 
 
+You can use the functionality directly in your Python scripts:
 
+```python
+from bioSet2Vec import BioSet2Vec
+
+# Configure BioSet2Vec 
+input_file = "input.json"
+params = BioSet2Vec.read_parameters_from_file(input_file)
+
+#Running TF-IDF transformation and saving results
+BioSet2Vec.compute(params)
+```
+## Other Examples
+
+For a hands-on example of how to use **BioSet2Vec**, check out the [notebooks/example_notebook.ipynb](notebooks/example_notebook.ipynb) in the `notebooks` folder.
 
