@@ -118,3 +118,15 @@ BioSet2Vec.compute(params)
 
 For a hands-on example of how to use **BioSet2Vec**, check out the [notebooks/example_notebook.ipynb](notebooks/example_notebook.ipynb) in the `notebooks` folder.
 
+## Citation
+
+If you use **BioSet2Vec** in your research or project, please cite the tool as follows:
+
+```bibtex
+@misc{BioSet2Vec,
+  author = {Ylenia Galluzzo, Raffaele Giancarlo, Simona E. Rombo, Filippo Utro},
+  title = {BioSet2Vec: extraction of k-mer dictionaries from multiple sets of biological sequences in the distributed},
+  year = {2024},
+  url = {#in review},
+  note = {GitHub repository}
+}
