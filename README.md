@@ -54,19 +54,21 @@ Press CTRL+X to exit the editor Press Y to save your changes and check:
     git clone https://github.com/Ylenia1211/BioSet2Vec.git
     cd BioSet2Vec
     ```
-
-5. Install the library "BioVec2Set" (with the dependencies):
-
-    ```bash
-     pip install bioset2vec/dist/bioset2vec-0.1.0-py3-none-any.whl --force-reinstall
-    ```
-6. Place `bioft.jar` in the working directory:
+    
+5. Place `bioft.jar` in the working directory:
 
    `bioft.jar` is required for your job, download and place it in your project directory.
 
    ```bash
    cp /path/to/bioft.jar ./bioset2vec/bioft.jar
    ```
+
+6. Install the library "BioVec2Set" (with the dependencies):
+
+    ```bash
+     pip install bioset2vec/dist/bioset2vec-0.1.0-py3-none-any.whl --force-reinstall
+    ```
+
 ### Configuration 
 Configure BioSet2Vec by creating an input.json file with the following parameters:
 ```json
