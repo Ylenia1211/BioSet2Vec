@@ -16,7 +16,7 @@
 
 ## Requirements
 
-- Python ">=3.8,<3.9"
+- Python ">=3.8,<3.9"  **https://www.python.org/downloads/release/python-380/**
 - JDK 8
 - [Apache Spark](https://spark.apache.org/) (for distributed computing) version 3.5.1
 - bioft.jar from https://github.com/Ylenia1211/Bioft.git
@@ -55,7 +55,7 @@ Press CTRL+X to exit the editor Press Y to save your changes and check:
     cd BioSet2Vec
     ```
     
-5. Place `bioft.jar` in the working directory:
+5. Place `bioft.jar` in the working directory (Rename the file to "bioft.jar" if it does not have this name):
 
    `bioft.jar` is required for your job, download and place it in your project directory.
 
@@ -63,8 +63,36 @@ Press CTRL+X to exit the editor Press Y to save your changes and check:
    cp /path/to/bioft.jar ./bioset2vec/bioft.jar
    ```
 
-6. Install the library "BioVec2Set" (with the dependencies):
+6. Create and activate a virtual environment in BioSet2Vec directory
+ ```bash
+    python3.8 -m venv venv_bioset2vec
+    # Activate on Linux/macOS
+    source venv_bioset2vec/bin/activate
+    # Or activate on Windows
+    venv_bioset2vec\Scripts\activate
+ ```
 
+7. Install the library "BioVec2Set" (with the dependencies).
+   Run:
+   ```bash
+       pip install --upgrade pip
+   ```
+   Build the distribuition. From the directory that contains setup.py (where bioset2vec is located), run:
+    ```bash
+       pip install wheel
+       python setup.py sdist bdist_wheel
+    ```
+    Once the distributions are created, you can install the package directly from the dist/ directory:
+     ```bash
+     pip install dist/bioset2vec-0.1.0-py3-none-any.whl
+     ```
+
+   Inside the main folder (same level as setup.py), run:
+    ```bash
+     pip install -e .
+    ```
+    to install the  Package Locally,
+    or
     ```bash
      pip install bioset2vec/dist/bioset2vec-0.1.0-py3-none-any.whl --force-reinstall
     ```
@@ -127,8 +155,8 @@ If you use **BioSet2Vec** in your research or project, please cite the tool as f
 ```bibtex
 @misc{BioSet2Vec,
   author = {Ylenia Galluzzo, Raffaele Giancarlo, Simona E. Rombo, Filippo Utro},
-  title = {BioSet2Vec: extraction of k-mer dictionaries from multiple sets of biological sequences in the distributed},
-  year = {2024},
+  title = {},
+  year = {2025},
   url = {#in review},
   note = {GitHub repository}
 }
