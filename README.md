@@ -149,7 +149,7 @@ BioSet2Vec.compute(params)
 For a hands-on example of how to use **BioSet2Vec**, check out the [notebooks/example_notebook.ipynb](notebooks/example_notebook.ipynb) in the `notebooks` folder.
 
 ## Dataset
-The BioSet2Vec library was tested by using the following data:
+The BioSet2Vec library was tested by using the following public data:
 - https://afproject.org/app/benchmark/genome/std/assembled/ecoli/dataset/
 - https://afproject.org/app/benchmark/genome/std/unassembled/plants/dataset/
 - https://hgdownload.cse.ucsc.edu/goldenPath/dm3/bigZips/
