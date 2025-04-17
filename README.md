@@ -154,7 +154,7 @@ The BioSet2Vec library was tested by using the following public data:
 - https://afproject.org/app/benchmark/genome/std/unassembled/plants/dataset/
 - https://hgdownload.cse.ucsc.edu/goldenPath/dm3/bigZips/
 
-
+To easily test the package use the dataset: Synthetic Data and Results.zip
 ## Citation
 
 If you use **BioSet2Vec** in your research or project, please cite the tool as follows:
