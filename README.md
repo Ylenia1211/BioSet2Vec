@@ -159,10 +159,14 @@ To easily test the package use the dataset: Synthetic Data and Results.zip
 
 If you use **BioSet2Vec** in your research or project, please cite the tool as follows:
 ```bibtex
-@misc{BioSet2Vec,
-  author = {Ylenia Galluzzo, Raffaele Giancarlo, Simona E. Rombo, Filippo Utro},
-  title = {},
-  year = {2025},
-  url = {#in review},
-  note = {GitHub repository}
+
+@article{galluzzo2025bioset2vec,
+  title={BioSet2Vec: extraction of k-mer dictionaries from multiple sets of biological sequences via big data technologies},
+  author={Galluzzo, Ylenia and Giancarlo, Raffaele and Rombo, Simona E and Utro, Filippo},
+  journal={BMC bioinformatics},
+  volume={26},
+  number={1},
+  pages={264},
+  year={2025},
+  publisher={Springer}
 }
